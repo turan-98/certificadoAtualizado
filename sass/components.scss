@@ -1,0 +1,55 @@
+$second-color:#fff;
+$active-color:#fb9b2b;
+.-component-input {
+    height: 5rem;
+    padding: 1.5rem !important;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    transition: all 200ms;
+    box-shadow: 0px 4px 5px rgba(2, 5, 2, 0.2);
+    border: none;
+    &:focus {
+        box-shadow: 0px 15px 20px rgba(15, 15, 15, 0.2);
+        transform: translateY(-7px);
+    }
+}
+
+.-component-button {
+    font-size: 1.5rem;
+    margin: 1rem;
+    background: $second-color;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    height: 4rem;
+    width: 150px;
+    transition: all 250ms ease-in-out;
+    &::before {
+        content: " ";
+        position: absolute;
+        border-radius: 30px;
+        height: 4rem;
+        width: 150px;
+        left: 7.76%;
+        border: 1px solid #fff;
+    }
+    &:hover {
+        transform: translateY(-7px);
+        background: $active-color;
+        color: #fff;
+        &::before {
+            border: 1px solid $active-color;
+        }
+    }
+}
+
+
+/*
+.border-button {
+    position: relative;
+    border: 1px solid #000;
+    @media screen and (max-width: $small) {
+        top: -4rem;
+        left: 6%;
+    }
+} */

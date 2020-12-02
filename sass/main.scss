@@ -1,0 +1,34 @@
+@import "text";
+@import "components";
+$primary-color:#6ED9A6;
+html {
+    font-size: 62.5%;
+}
+
+.wrapper-flex {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    background: $primary-color;
+}
+
+.wallpaper {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    overflow: hidden;
+}
+
+.wallpaper>.wallpaper-image {
+    width: 50vh;
+}
+
+.wrapper-btn {
+    position: relative;
+    @media screen and (max-width: $small) {
+        margin-top: 4rem;
+    }
+}

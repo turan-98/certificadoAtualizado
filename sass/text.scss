@@ -1,0 +1,11 @@
+$small :450px;
+$color-text-primary:#413F3F;
+.h3-emissao {
+    font-weight: 700;
+    color: $color-text-primary;
+    @media screen and (max-width: $small) {
+        max-width: 300px;
+        margin: 1rem;
+        font-size: 3.6rem;
+    }
+}
