@@ -24,6 +24,9 @@ html {
 
 .wallpaper>.wallpaper-image {
     width: 50vh;
+    @media screen and (min-width: $large-display) {
+        width: 70vh;
+    }
 }
 
 .wrapper-btn {
@@ -31,4 +34,12 @@ html {
     @media screen and (max-width: $small) {
         margin-top: 4rem;
     }
+}
+
+.wrapper-btn-down {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @extend %center-flex-column;
 }

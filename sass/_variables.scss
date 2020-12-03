@@ -1,0 +1,15 @@
+$second-color:#fff;
+$active-color:#fb9b2b;
+$medium-display:768px;
+$large-display:1440px;
+$small :450px;
+$color-text-primary:#413F3F;
+@mixin radius($value) {
+    border-radius: $value;
+}
+
+%center-flex-column {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}

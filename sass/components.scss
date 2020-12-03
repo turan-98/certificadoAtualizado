@@ -1,5 +1,4 @@
-$second-color:#fff;
-$active-color:#fb9b2b;
+@import "variables.scss";
 .-component-input {
     height: 5rem;
     padding: 1.5rem !important;
@@ -11,6 +10,9 @@ $active-color:#fb9b2b;
     &:focus {
         box-shadow: 0px 15px 20px rgba(15, 15, 15, 0.2);
         transform: translateY(-7px);
+    }
+    @media screen and (min-width:$large-display) {
+        height: 6.5rem;
     }
 }
 
@@ -41,15 +43,35 @@ $active-color:#fb9b2b;
             border: 1px solid $active-color;
         }
     }
+    @media screen and(max-width:$small) {
+        margin: -1.8rem 1rem 1rem 1rem;
+    }
+    @media screen and (min-width: $medium-display) {
+        margin-top: 3rem;
+        &::before {
+            left: 5%;
+        }
+    }
+    @media screen and (min-width:$large-display) {
+        height: 5rem;
+        width: 200px;
+        &::before {
+            left: 3%;
+            height: 5rem;
+            width: 200px;
+        }
+    }
 }
 
+.-button-down {
+    animation: blink-button 2s ease-in-out infinite;
+}
 
-/*
-.border-button {
-    position: relative;
-    border: 1px solid #000;
-    @media screen and (max-width: $small) {
-        top: -4rem;
-        left: 6%;
+@keyframes blink-button {
+    0% {
+        opacity: 0;
     }
-} */
+    100% {
+        opacity: 1;
+    }
+}

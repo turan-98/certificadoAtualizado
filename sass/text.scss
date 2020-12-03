@@ -1,5 +1,4 @@
-$small :450px;
-$color-text-primary:#413F3F;
+@import "variables.scss";
 .h3-emissao {
     font-weight: 700;
     color: $color-text-primary;
@@ -7,5 +6,13 @@ $color-text-primary:#413F3F;
         max-width: 300px;
         margin: 1rem;
         font-size: 3.6rem;
+    }
+    @media screen and (max-width: $medium-display) {
+        margin: 2rem;
+    }
+    @media screen and (min-width:$large-display) {
+        font-size: 7rem;
+        margin: 2rem;
+        max-width: 300px;
     }
 }
