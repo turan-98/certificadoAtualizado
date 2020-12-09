@@ -1,18 +1,23 @@
 @import "text";
 @import "components";
-$primary-color:#6ED9A6;
+@import "final";
+$primary-color:#0a1124;
 html {
     font-size: 62.5%;
 }
 
 .wrapper-flex {
-    position: relative;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-content: center;
+}
+
+.wrapper-flex,
+.wrapper-checkbox {
+    position: relative;
     height: 100vh;
-    background: $primary-color;
+    //background: $primary-color;
 }
 
 .wallpaper {
